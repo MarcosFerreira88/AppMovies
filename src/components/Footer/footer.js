@@ -1,5 +1,6 @@
 import React from "react";
-import './footer.css'
+import 'react-bootstrap'
+
 
 const Footer = () => <footer className="page-footer font-small blue pt-4">
     <div className="container-fluid text-center text-md-left">
@@ -33,10 +34,10 @@ const Footer = () => <footer className="page-footer font-small blue pt-4">
         </div>
     </div>
 
-    <div className="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    <div className="footer-copyright text-center py-3">© 2021 Copyright:
+        <a href="https://mdbootstrap.com/"> FullPelis</a>
     </div>
 
 </footer>
 
-export default Footer.js
+export default Footer;
