@@ -1,10 +1,11 @@
 import "./App.css";
-import travel_01 from "./assets/peliculas.png";
+import inicio from "./assets/peliculas.png";
 import travel_02 from "./assets/travel-02.jpg";
 import travel_03 from "./assets/travel-03.jpg";
 import Hero from "./components/landingPage/Hero";
 import Navbar from "./components/landingPage/Navbar";
 import Slider from "./components/landingPage/Slider";
+import Footer from "./components/Footer/footer"
 
 function App() {
   const navbarLinks = [
@@ -15,8 +16,8 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar navbarLinks={navbarLinks} />
-      <Hero imageSrc={travel_01} />
+      <Navbar navbarLinks={navbarLinks} />    
+      <Hero imageSrc={inicio} />
       <Slider
         imageSrc={travel_02}
         title={"Ser un videomaniaco."}
@@ -30,6 +31,7 @@ function App() {
         subtitle={"Your dream vacation is only a few clicks away."}
         flipped={true}
       />
+      <Footer/>
     </div>
   );
 }
