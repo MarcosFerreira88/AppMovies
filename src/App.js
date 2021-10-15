@@ -24,31 +24,7 @@ function App() {
       </Switch>
     </Router>
     </>
-    //     <Router>  
-          
-    //         <Switch>
-
-    //               <Route path="">
-    //                     <Landindpage />
-    //               </Route>
-                  
-    //               <Route path="">
-                  
-    //               </Route>
-
-    //               <Route path="">
-                
-    //               </Route>
-
-    //               <Route path="">
-                  
-    //               </Route>
-                  
-                  
-
-    //         </Switch>
-   
-    // </Router>
+    
 
     
   );
