@@ -12,7 +12,7 @@ const Navbar = ({ navbarLinks }) => {
 
   return (
     <nav className="navbar">
-      <span className="navbar__logo">FullPelis</span>
+      <span className="navbar__logo"> <a href="/" style={{textDecoration:'none', color:'white'}}>FullPelis</a></span>
       {menuClicked ? (
         <FiX size={25} className={"navbar__menu"} onClick={toggleMenuClick} />
       ) : (
