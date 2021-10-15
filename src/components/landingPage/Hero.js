@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import Button from "react-bootstrap/Button";
 
 const Hero = ({ imageSrc }) => {
   return (
@@ -7,7 +8,7 @@ const Hero = ({ imageSrc }) => {
       <img src={imageSrc} alt="Travel" className="hero__image" />
       <h1 className="hero__title">Buscar peliculas Facilmente.<br/>
       <center>
-      <button className="button">Ingresar</button>
+      <Button variant="info">Ingresar</Button>
       </center>
       </h1>
       
