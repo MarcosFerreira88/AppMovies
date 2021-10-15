@@ -1,38 +1,56 @@
 import "./App.css";
-import inicio from "./assets/peliculas.png";
-import travel_02 from "./assets/travel-02.jpg";
-import travel_03 from "./assets/travel-03.jpg";
-import Hero from "./components/landingPage/Hero";
-import Navbar from "./components/landingPage/Navbar";
-import Slider from "./components/landingPage/Slider";
-import Footer from "./components/Footer/footer"
+import Home from './components/Home/home'
+import Landindpage from './components/landingPage/landingpage'
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+
 
 function App() {
-  const navbarLinks = [
-    { url: "#", title: "Home" },
-    { url: "#", title: "Contact" },
-    { url: "#", title: "About" },
-  ];
+ 
 
   return (
-    <div className="App">
-      <Navbar navbarLinks={navbarLinks} />    
-      <Hero imageSrc={inicio} />
-      <Slider
-        imageSrc={travel_02}
-        title={"Ser un videomaniaco."}
-        subtitle={
-          "Nuestra plataforma ofrece una amplia variedad de Peliculas!"
-        }
-      />
-      <Slider
-        imageSrc={travel_03}
-        title={"Memories for a lifetime."}
-        subtitle={"Your dream vacation is only a few clicks away."}
-        flipped={true}
-      />
-      <Footer/>
-    </div>
+    <>
+    
+    <Router>
+      <Switch>
+      <Route exact path="/">  
+                  <Landindpage/>
+      </Route>
+      <Route exact path="/home">  
+                 <Home/>
+      </Route>
+      <Route>
+          <h1> ERROR 404 NOT FOUND </h1>
+      </Route>
+      </Switch>
+    </Router>
+    </>
+    //     <Router>  
+          
+    //         <Switch>
+
+    //               <Route path="">
+    //                     <Landindpage />
+    //               </Route>
+                  
+    //               <Route path="">
+                  
+    //               </Route>
+
+    //               <Route path="">
+                
+    //               </Route>
+
+    //               <Route path="">
+                  
+    //               </Route>
+                  
+                  
+
+    //         </Switch>
+   
+    // </Router>
+
+    
   );
 }
 
